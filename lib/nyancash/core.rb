@@ -1,6 +1,10 @@
 require 'nyancash/core/version'
-
-module NyanCash
-  module Core
-  end
-end
+require 'nyancash/core/model_definition'
+require 'nyancash/core/models'
+require 'nyancash/core/models/account'
+require 'nyancash/core/models/book'
+require 'nyancash/core/models/commodity'
+require 'nyancash/core/models/slot'
+require 'nyancash/core/models/split'
+require 'nyancash/core/models/transaction'
+require 'nyancash/core/session'
