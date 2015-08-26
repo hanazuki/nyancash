@@ -1,4 +1,4 @@
-module NyanCash::Core
+module NyanCash
   class Session
     attr_reader :db
 

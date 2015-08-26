@@ -1,6 +1,6 @@
 require_relative 'base'
 
-module NyanCash::Core::Models
+module NyanCash::Models
   model :Split do
     include Base
 

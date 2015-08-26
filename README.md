@@ -1,1 +1,1 @@
-# NyanCash::Core
+# NyanCash

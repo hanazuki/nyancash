@@ -1,16 +1,16 @@
 lib = File.expand_path('../lib', __FILE__)
 $:.unshift(lib) unless $:.include?(lib)
-require 'nyancash/core/version'
+require 'nyancash/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'nyancash-core'
-  spec.version       = NyanCash::Core::VERSION
+  spec.name          = 'nyancash'
+  spec.version       = NyanCash::VERSION
   spec.authors       = ['Kasumi Hanazuki']
   spec.email         = ['kasumi@rollingapple.net']
 
   spec.summary       = %q{Ruby to GnuCash database binding}
   spec.description   = %q{Ruby to GnuCash database binding}
-  spec.homepage      = 'https://github.com/hanazuki/nyancash-core'
+  spec.homepage      = 'https://github.com/hanazuki/nyancash'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split(?\0).reject {|f| f.match(%r{^(test|spec|features)/}) }

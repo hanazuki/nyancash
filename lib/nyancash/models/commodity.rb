@@ -1,6 +1,6 @@
 require_relative 'base'
 
-module NyanCash::Core::Models
+module NyanCash::Models
   model :Commodity do
     include Base
 

@@ -1,6 +1,6 @@
 require 'sequel'
 
-module NyanCash::Core
+module NyanCash
   class ModelDefinition
     include Sequel::Inflections
 

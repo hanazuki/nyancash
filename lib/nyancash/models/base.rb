@@ -1,6 +1,6 @@
 require 'sequel/plugins/schema_version'
 
-module NyanCash::Core::Models
+module NyanCash::Models
   module Base
     def self.included(klass)
       klass.instance_eval do
