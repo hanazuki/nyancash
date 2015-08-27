@@ -10,7 +10,7 @@ module NyanCash
       @block = block
     end
 
-    def create(obj, db = obj.db)
+    def create(obj, db)
       name = @name
       model = Class.new(Sequel::Model(db[@table_name.intern]))
       model.define_singleton_method(:name) { name }

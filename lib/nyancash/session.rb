@@ -1,16 +1,18 @@
 module NyanCash
   class Session
     attr_reader :db
+    attr_reader :models
 
     def initialize(db, hostname, pid)
       @db = db
       @lock = Lock.new(db, hostname, pid)
+      @models = Object.new
 
       Models::All.each do |model|
-        model.create(self)
+        model.create(@models, @db)
       end
       Models::All.each do |model|
-        model.config(self)
+        model.config(@models)
       end
 
       @lock.acquire
